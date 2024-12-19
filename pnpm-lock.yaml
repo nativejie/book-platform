@@ -7,11 +7,13 @@ specifiers:
   '@types/react': ^19
   '@types/react-dom': ^19
   book-platform: 'file:'
+  clsx: ^2.1.1
   eslint: ^9
   eslint-config-next: 15.1.0
   ethers: ^6.13.4
   framer-motion: ^11.15.0
   next: 15.1.0
+  next-themes: ^0.4.4
   postcss: ^8
   react: ^19.0.0
   react-dom: ^19.0.0
@@ -20,10 +22,12 @@ specifiers:
 
 dependencies:
   '@nextui-org/react': 2.6.8_ak6ilw3fhen2axdvqb7uwhdrhi
-  book-platform: 'file:'
+  book-platform: file:_umngak4gmm62tk56e2nnjzhdha
+  clsx: 2.1.1
   ethers: 6.13.4
   framer-motion: 11.15.0_upmzqgzhjrquwzo2dphtigtdgi
   next: 15.1.0_upmzqgzhjrquwzo2dphtigtdgi
+  next-themes: 0.4.4_upmzqgzhjrquwzo2dphtigtdgi
   react: 19.0.0
   react-dom: 19.0.0_react@19.0.0
 
@@ -4859,6 +4863,16 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
+  /next-themes/0.4.4_upmzqgzhjrquwzo2dphtigtdgi:
+    resolution: {integrity: sha512-LDQ2qIOJF0VnuVrrMSMLrWGjRMkq+0mpgl6e0juCLqdJ+oo8Q84JRWT6Wh11VDQKkMMe+dVzDKLWs5n87T+PkQ==}
+    peerDependencies:
+      react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+    dependencies:
+      react: 19.0.0
+      react-dom: 19.0.0_react@19.0.0
+    dev: false
+
   /next/15.1.0_upmzqgzhjrquwzo2dphtigtdgi:
     resolution: {integrity: sha512-QKhzt6Y8rgLNlj30izdMbxAwjHMFANnLwDwZ+WQh5sMhyt4lEBqDK9QpvWHtIM4rINKPoJ8aiRZKg5ULSybVHw==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
@@ -5880,22 +5894,29 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  'file:':
+  file:_umngak4gmm62tk56e2nnjzhdha:
     resolution: {directory: '', type: directory}
+    id: 'file:'
     name: book-platform
     version: 0.1.0
     dependencies:
+      '@nextui-org/react': 2.6.8_ak6ilw3fhen2axdvqb7uwhdrhi
       ethers: 6.13.4
+      framer-motion: 11.15.0_upmzqgzhjrquwzo2dphtigtdgi
       next: 15.1.0_upmzqgzhjrquwzo2dphtigtdgi
+      next-themes: 0.4.4_upmzqgzhjrquwzo2dphtigtdgi
       react: 19.0.0
       react-dom: 19.0.0_react@19.0.0
     transitivePeerDependencies:
       - '@babel/core'
+      - '@emotion/is-prop-valid'
       - '@opentelemetry/api'
       - '@playwright/test'
+      - '@types/react'
       - babel-plugin-macros
       - babel-plugin-react-compiler
       - bufferutil
       - sass
+      - tailwindcss
       - utf-8-validate
     dev: false
